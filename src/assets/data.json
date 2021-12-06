@@ -1,0 +1,20 @@
+[   
+    {
+        "id": "1",
+        "title": "Item title",
+        "text": "test record with all three tags...",
+        "tags": ["bug", "issue", "comment"]
+    },
+    {
+        "id": "2",
+        "title": "Stack overflow (comment + link)",
+        "text": "Here is the customer's comment. It contains Stack Overflow link: <a href=\"https://stackoverflow.com/\">stackoverflow.com</a>",
+        "tags": ["comment"]
+    },
+    {
+        "id": "3",
+        "title": "Google (bug and issue + link)",
+        "text": "Some unknown behavior... Link: <a href=\"https://google.com/\">GOOGLE</a>",
+        "tags": ["bug", "issue"]
+    }
+]
