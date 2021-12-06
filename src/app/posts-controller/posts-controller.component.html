@@ -1,1 +1,8 @@
-<p>posts-controller works!</p>
+
+<div class="container" data-test="posts-container">
+    <div *ngFor="let post of (getPostsObservable() | async)" class="post" data-test="post">
+        <div data-test="post-title">{{post.title}}</div>
+        <div data-test="post-tags">{{post.tags}}</div>
+        <div data-test="post-text">{{post.text}}</div>
+    </div>
+</div>

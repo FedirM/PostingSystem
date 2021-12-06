@@ -39,7 +39,7 @@ describe('PostService', () => {
     request.flush(jsonData);
     controller.verify();
 
-    expect(actualData).toEqual(jsonData);
+    expect(actualData).toEqual(Array.from(jsonData));
   });
 
 });
