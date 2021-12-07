@@ -7,6 +7,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PostsControllerComponent } from './posts-controller/posts-controller.component';
 import { EditDialogComponent } from './edit-dialog/edit-dialog.component';
+import { EvaluateDirective } from './evaluate-directive/evaluate.directive';
+import { EvaluatePipe } from './pipes/evaluate.pipe';
 
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSelectModule} from '@angular/material/select';
@@ -30,7 +32,9 @@ const materialImports = [
   declarations: [
     AppComponent,
     PostsControllerComponent,
-    EditDialogComponent
+    EditDialogComponent,
+    EvaluateDirective,
+    EvaluatePipe
   ],
   imports: [
     BrowserModule,

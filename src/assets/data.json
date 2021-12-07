@@ -2,13 +2,13 @@
     {
         "id": "1",
         "title": "Item title",
-        "text": "test record with all three tags...",
+        "text": "test record with all three tags... Eval: 3 + 4 -5",
         "tags": ["bug", "issue", "comment"]
     },
     {
         "id": "2",
         "title": "Stack overflow (comment + link)",
-        "text": "Here is the customer's comment. It contains Stack Overflow link: <a href=\"https://stackoverflow.com/\">stackoverflow.com</a>",
+        "text": "<div>One more Eval: 34 - 55+2+1    </div>Here is the customer's comment. It contains Stack Overflow link: <a href=\"https://stackoverflow.com/\">stackoverflow.com</a>",
         "tags": ["comment"]
     },
     {

@@ -15,7 +15,7 @@
               <mat-card-title data-test="post-title">{{post.title}}</mat-card-title>
               <mat-card-subtitle data-test="post-tags">Tags: {{post.tags.join(', ')}}</mat-card-subtitle>
             </mat-card-header>
-            <mat-card-content data-test="post-text" [innerHtml]="post.text"></mat-card-content>
+            <mat-card-content data-test="post-text" [innerHtml]="post.text | evaluate"></mat-card-content>
             <mat-card-actions>
               <button mat-button (click)="editPost(post)">EDIT</button>
               <button mat-button (click)="deletePost(post)">DELETE</button>
