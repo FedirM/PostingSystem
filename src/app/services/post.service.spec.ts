@@ -31,7 +31,7 @@ describe('PostService', () => {
   it('test mock data via http', () => {
     let actualData: Array<Post> | unknown;
 
-    service.getPostList().subscribe(data => {
+    service.init().subscribe(data => {
       actualData = data;
     });
 
@@ -39,7 +39,7 @@ describe('PostService', () => {
     request.flush(jsonData);
     controller.verify();
 
-    expect(actualData).toEqual(Array.from(jsonData));
+    expect(actualData).toEqual(jsonData);
   });
 
 });
